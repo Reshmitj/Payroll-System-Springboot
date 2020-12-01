@@ -19,6 +19,7 @@ import com.example.demo.services.AdminService;
 import com.example.demo.services.PaySlipServices;
 import com.example.demo.services.UserService;
 import javax.servlet.ServletException;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 
 @Controller
@@ -139,8 +140,9 @@ public class ApplicationController {
     }
     
     @RequestMapping("/all-admins")
-    public String alladmins(HttpServletRequest req) {
+    public String alladmins(HttpServletRequest req, final RedirectAttributes redirectAttributes) {
         req.setAttribute("admins", adminService.showAllAdmin());
+        redirectAttributes.addFlashAttribute("css", "Added successfully!");
         return "alladmins";
     }
     

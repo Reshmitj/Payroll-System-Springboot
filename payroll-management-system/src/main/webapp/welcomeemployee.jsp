@@ -59,8 +59,8 @@
                     <p><i class="fa fa-info"></i>Employee Payroll Management System</p>
                 </div><!-- /.left-content -->
                 <div class="left-content float-right">
-                    <p>Logged in as: ${admin.email}</p>                 
-                 </div><!-- /.right-content -->
+                    <p>Logged in as: ${admin.email}</p>  
+                </div><!-- /.right-content -->
             </div><!-- /.container-fluid -->
         </div><!-- /.top-bar -->
 
@@ -167,17 +167,6 @@
     
 
 </div><!-- /.page-wrapper -->
-<script type="text/discourse-plugin" version="0.8.18">
-    api.onPageChange(() => {
-        if(api.getCurrentUser() != null) {
-            $("#logged-in-user").text(" " + api.getCurrentUser().name.split(' ')[0]);
-        }
-    });
-</script>
-
-
-
-
 <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
 <!-- /.scroll-to-top -->
 

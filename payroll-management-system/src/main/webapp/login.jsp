@@ -53,7 +53,7 @@
         <div class="form-block min-vh-100">
             <div class="center">
                         <h4>Payroll Management System</h4></div>
-            <form action="admin" method="POST">
+            <form name = "form3" action="admin" method="POST">
             	<input type="hidden" name="id" value="${admin.id }">
             	<input type="email" name="email" placeholder="admin@example.com" value="${admin.email }" required>
                 <input type="password" name="password" placeholder="password" value="${admin.password }" required>
@@ -70,7 +70,6 @@
     
 
 </div><!-- /.page-wrapper -->
-
 
 
 <script src="js/jquery.js"></script>

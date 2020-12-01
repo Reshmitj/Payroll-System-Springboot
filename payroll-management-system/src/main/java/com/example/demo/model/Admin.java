@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
 
 @Entity
 @Table(name = "admin")
@@ -18,7 +19,7 @@ public class Admin  {
     @Id
 
     private int id;
-    
+   
     private String email;
 
     private String password;

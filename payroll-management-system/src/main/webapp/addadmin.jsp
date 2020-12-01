@@ -55,11 +55,11 @@
                 <div class="form-block min-vh-100">
                     <div class="center">
                         <h4>Add New Admin</h4></div>
-                    <form action="save-admin" method="POST">
+                    <form name = "form1" action="save-admin" method="POST">
 
                         <input type="hidden" name="id" value="${admin.id }">
-                        <input type="text" name="email" placeholder="admin@example.com.." value="${admin.email }" required>
-                        <input type="text" name="password" placeholder="password" value="${admin.password }" required>
+                        <input type="email" name="email" placeholder="admin@example.com.." value="${admin.email }" required>
+                        <input type="password" name="password" placeholder="password" value="${admin.password }" required>
                        
                         <br>
                         <button type="submit" onclick="myFunction()" class="thm-btn">Add Admin</button>
@@ -83,7 +83,12 @@
         </script>
         <script>
             function myFunction() {
-                alert("Added Successfully!");
+                var email1 = document.form1. email.value;
+                var password1 = document.form1.password.value;
+                if(email1 === "" || password1 === "")
+                alert("All Fields Required!");                 
+            else
+                alert("Added Sucessfully");
             }
         </script>
 

@@ -55,7 +55,7 @@
                 <div class="form-block min-vh-100">
                     <div class="center">
                         <h4>Add New Employee</h4></div>
-                    <form action="save-user" method="POST">
+                    <form name = "form2" action="save-user" method="POST">
 
                         <input type="hidden" name="id" value="${user.id }">
                         <input type="text" name="username" placeholder="Employee User Name.." value="${user.username }" required>
@@ -89,10 +89,22 @@
             }
         </script>
         <script>
-function myFunction() {
-  alert("Added Successfully!");
-}
-</script>
+            function myFunction() {
+                var username1 = document.form2. username.value;
+                var firstname1 = document.form2.firstname.value;
+                var lastname1 = document.form2.lastname.value;
+                var email1 = document.form2.email.value;
+                var phone1 = document.form2.phone.value;
+                var age1 = document.form2.age.value;
+                var doj1 = document.form2.doj.value;
+                var pos1 = document.form2.pos.value;
+                var sal1 =  document.form2.salary.value;
+                if(username1 === "" || firstname1 === "" || lastname1 === "" ||email1 === "" || phone1 === "" || age1 === "" ||doj1 === "" || pos1 === "" || sal1 === "")
+                alert("All Fields Required!");                 
+            else
+                alert("Added Sucessfully");
+            }
+        </script>
 
 
         <script src="js/jquery.js"></script>
