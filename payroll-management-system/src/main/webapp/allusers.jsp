@@ -81,7 +81,7 @@
                 <div class="main-navigation" id="main-nav-bar">
                     <ul class=" navigation-box">
                         <li>
-                            <a href="welcome">Home</a>
+                            <a href="index">Home</a>
                         </li>
                         <li class=" current">
                             <a href="all-users">All Employees</a>

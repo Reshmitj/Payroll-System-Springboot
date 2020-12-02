@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import static antlr.Utils.error;
 import javax.servlet.http.HttpServletRequest;
@@ -40,7 +40,7 @@ public class ApplicationController {
         return "welcomeemployee";
     }
 
-    @RequestMapping("/welcome")
+    @RequestMapping("/index")
     public String welcome(HttpServletRequest req) {
         req.setAttribute("mode", "MODE_HOME");
         return "welcomeemployee";
@@ -76,17 +76,6 @@ public class ApplicationController {
     public String login(HttpServletRequest req) {
         req.setAttribute("mode", "MODE_LOGIN");
         return "welcomeemployee";
-    }
-
-    @RequestMapping("/login-user")
-    public String loginUser(@ModelAttribute User user, HttpServletRequest req) {
-        if (userService.findByUsernameAndPassword(user.getUsername(), user.getPassword()) != null) {
-            return "homepage";
-        } else {
-            req.setAttribute("error", "Invalid Username or Password");
-            req.setAttribute("mode", "MODE_LOGIN");
-            return "welcomeemployee";
-        }
     }
 
 

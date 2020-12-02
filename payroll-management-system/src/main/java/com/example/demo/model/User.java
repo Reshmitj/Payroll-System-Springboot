@@ -12,6 +12,7 @@ import javax.persistence.Table;
 public class User {
 	
 	@Id
+        @GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
       
 	private String username;
@@ -25,10 +26,10 @@ public class User {
 	public String toString() {
 		return "User [id=" + id + ", username=" + username + ", firstname=" + firstname + ", lastname=" + lastname
 				+ ", email=" + email + ", phone=" + phone + ", doj=" + doj + ", pos=" + pos + ", age=" + age
-				+ ", salary=" + salary + ", password=" + password + "]";
+				+ ", salary=" + salary +  "]";
 	}
 	public User(int id, String username, String firstname, String lastname, String email, String phone, String doj,
-			String pos, String age, String salary, String password) {
+			String pos, String age, String salary) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -40,7 +41,6 @@ public class User {
 		this.pos = pos;
 		this.age = age;
 		this.salary = salary;
-		this.password = password;
 	}
 	public String getEmail() {
 		return email;
@@ -74,7 +74,7 @@ public class User {
 	}
 	private String age;
 	private String salary;
-	private String password;
+	
 	
 	public User() {
 		
@@ -109,11 +109,6 @@ public class User {
 	public void setAge(String age) {
 		this.age = age;
 	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
+	
 
 }

@@ -77,7 +77,7 @@
                 <div class="main-navigation" id="main-nav-bar">
                    <ul class=" navigation-box">
                                 <li>
-                                    <a href="welcome">Home</a>
+                                    <a href="index">Home</a>
                                 </li>
                                 <li>
                                     <a href="all-users">All Employees</a>
@@ -118,14 +118,18 @@
                             <li>Employee information and payroll system is aimed at efficient management of employee information, emoluments, expenses, etc </li>
                             <li>This Payroll Management System application is developed with spring boot MVC framework</li>
                             <li>It has a Single Login : Admin </li>
-                            <li>The Admin credentials should be available in the database</li>
+                            <li>In login page, a register option is also provided so that a new admin can be registered for this application</li>
+                            <li>All the credentials details are updated in database</li>
                             <li>The Admin can add Employee and Manage them</li>
                             <li>Pay slips are generated at the comfort of a single mouse click</li>
                             <li>Admin can generate Payroll and print it</li>
+                            <li>Home page displays the introduction of the Application. By clicking read more link, detailed information about the application will be displayed in a new page</li>
+                            <li>JavaScript has been used for creating views and "index.jsp" is the home page</li>
                             <li>All Employees tab shows the total list of employees which have been already added</li>
+                            <li>Admin List tab shows the total list of Admins who have root access to the Application</li>
                             <li>Manage Payroll tab helps to generate the payslip of the registered employees for the given month and year</li>
                             <li>Add Employee tab is used for adding new employees</li>
-                            <li>Home page displays the introduction of the Application. By clicking read more link, detailed information about the application will be displayed in a new page</li>
+                            <li>Add Admin tab is used for adding new admins</li>
                               </ul>
                         </div>
                     </div>

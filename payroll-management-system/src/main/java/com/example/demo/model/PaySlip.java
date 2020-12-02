@@ -13,6 +13,7 @@ import javax.persistence.Table;
 public class PaySlip {
 	
 	@Id
+        @GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	private String email;
 	private String month;

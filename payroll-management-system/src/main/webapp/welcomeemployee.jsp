@@ -59,7 +59,7 @@
                     <p><i class="fa fa-info"></i>Employee Payroll Management System</p>
                 </div><!-- /.left-content -->
                 <div class="left-content float-right">
-                    <p>Logged in as: ${admin.email}</p>  
+                    <a href="readmore" class="read-more" style="color: whitesmoke">About Us</a>  
                 </div><!-- /.right-content -->
             </div><!-- /.container-fluid -->
         </div><!-- /.top-bar -->
@@ -77,7 +77,7 @@
                 <div class="main-navigation" id="main-nav-bar">
                     <ul class=" navigation-box">
                         <li class=" current" >
-                            <a href="welcome">Home</a>
+                            <a href="index">Home</a>
                         </li>
                         <li>
                             <a href="all-users">All Employees</a>

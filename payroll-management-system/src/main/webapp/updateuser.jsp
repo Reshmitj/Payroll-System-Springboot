@@ -68,7 +68,6 @@
                 <input type="date" name="doj" placeholder="Date of Joining" value="${user.doj}">
                 <input type="text" name="pos" placeholder="Designation.. Ex- Junior Web Developer" value="${user.pos }">
                 <input type="text" name="salary" placeholder="Salary in INR" value="${user.salary }">
-                <input type="password" name="password" placeholder="Password.." value="${user.password }">
                 <br>
                 <button type="submit" onclick="myFunction()" class="thm-btn">Update Employee</button>
                  <button onclick="goBack()" class="thm-btn">Go Back</button>
