@@ -57,9 +57,7 @@
                 <div class="left-content float-left">
                     <p><i class="fa fa-info"></i>Employee Payroll Management System</p>
                 </div><!-- /.left-content -->
-                 <div class="left-content float-right">
-                    <p>Logged in as: ${admin.email}</p>
-                </div><!-- /.right-content -->
+                
                 
             </div><!-- /.container-fluid -->
         </div><!-- /.top-bar -->

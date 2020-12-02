@@ -37,13 +37,13 @@ public class ApplicationController {
     @ResponseBody
     @RequestMapping("/home")
     public String hello() {
-        return "welcomeemployee";
+        return "index";
     }
 
     @RequestMapping("/index")
     public String welcome(HttpServletRequest req) {
         req.setAttribute("mode", "MODE_HOME");
-        return "welcomeemployee";
+        return "index";
     }
 
     @RequestMapping("/register")
@@ -56,7 +56,7 @@ public class ApplicationController {
         userService.saveMyUser(user);
         request.setAttribute("users", userService.showAllUsers());
         request.setAttribute("mode", "MODE_HOME");
-        return "welcomeemployee";
+        return "index";
     }
 
     @RequestMapping("/delete-user")
@@ -75,14 +75,14 @@ public class ApplicationController {
     @RequestMapping("/login")
     public String login(HttpServletRequest req) {
         req.setAttribute("mode", "MODE_LOGIN");
-        return "welcomeemployee";
+        return "index";
     }
 
 
     @RequestMapping("/admin")
     public String loginadmin(@ModelAttribute Admin admin, HttpServletRequest req) {
         if (adminService.findByEmailAndPassword(admin.getEmail(), admin.getPassword()) != null) {
-            return "welcomeemployee";
+            return "index";
         } else {
             return "login";
         }
@@ -140,7 +140,7 @@ public class ApplicationController {
         adminService.saveAdmin(admin);
         request.setAttribute("admin", adminService.showAllAdmin());
         request.setAttribute("mode", "MODE_HOME");
-        return "welcomeemployee";
+        return "index";
     }
 
     @RequestMapping("/delete-admin")

@@ -197,7 +197,7 @@
                                 <input type="text" name="year" value="2020">
                             </div><!-- /.col-md-12 -->
                             <div class="col-md-6">                            
-                                <input type="text" name="deduction" placeholder="Total Deductions in INR">
+                                <input type="text" name="deduction" placeholder="Total Deductions in $">
                             </div><!-- /.col-md-6 -->
                             <div class="col-md-12">
                                 <div class="btn-box">
